@@ -1,0 +1,21 @@
+a = 10 
+b = 3 
+print(a + b)  
+print(a // b)  
+print(a * b)
+print(a - b)
+
+while a > b:
+    print("certo") 
+    break
+else:
+    print("errado")
+
+
+
+
+    
+    
+
+
+
