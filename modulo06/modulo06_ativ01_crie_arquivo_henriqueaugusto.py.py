@@ -1,6 +1,6 @@
 nome_arquivo = "dados_arquivo.txt"
 
-
+# essa parte do código cria um arquivo de texto e coloca informações nele.
 conteudo = [
     "Ivan Silva;40 anos;02899-000;947541;ivanpaulino@mail.com\n",
     "Beatriz Vitoria;30 anos;057193-000;978786;beavitoria@mail.com\n",

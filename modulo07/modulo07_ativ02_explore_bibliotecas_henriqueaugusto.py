@@ -1,15 +1,53 @@
 import random
 from datetime import datetime
-from colorama import Fore, Style, init
-from faker import Faker
 
-# Inicializa o colorama (necessário no Windows para as cores funcionarem)
+try:
+    from colorama import Fore, Style, init
+except ImportError:
+    class _ColorDummy:
+        def __getattr__(self, name):
+            return ""
+
+    Fore = _ColorDummy()
+    Style = _ColorDummy()
+
+    def init(*args, **kwargs):
+        return None
+
+try:
+    from faker import Faker
+except ImportError:
+    class Faker:
+        def __init__(self, locale=None):
+            self._nomes = [
+                "Ana Souza",
+                "Carlos Lima",
+                "Beatriz Costa",
+                "Davi Pereira",
+                "Laura Santos",
+                "João Oliveira",
+                "Maria Silva",
+                "Pedro Rocha",
+            ]
+
+        def name(self):
+            return random.choice(self._nomes)
+
+        def phone_number(self):
+            return f"({random.randint(11, 99)}) {random.randint(90000, 99999)}-{random.randint(1000, 9999)}"
+
+        def email(self):
+            nome = random.choice(self._nomes).lower().replace(" ", ".")
+            dominio = random.choice(["gmail.com", "outlook.com", "yahoo.com.br"])
+            return f"{nome}@{dominio}"
+
+
 init(autoreset=True)
 
-# Inicializa o gerador de dados fictícios em português
+# Inicializa o gerador de dados fakes
 fake = Faker("pt_BR")
 
-# Lista de matérias padrão do sistema
+# lista de materias para as notas do boletim
 MATERIAS = [
     "Matemática",
     "Português",
@@ -19,9 +57,9 @@ MATERIAS = [
     "Inglês",
 ]
 
-
+ #essa def cria os dados fakes de um aluno, nome, idade , telefone, e email.
 def gerar_dados_aluno():
-    """Gera dados pessoais fictícios para o aluno."""
+   
     return {
         "nome": fake.name(),
         "idade": random.randint(14, 18),
@@ -29,9 +67,9 @@ def gerar_dados_aluno():
         "email": fake.email(),
     }
 
-
+ # essa def é uma forma de preencher as notas de forma manual
 def obter_notas_manuais():
-    """Solicita ao usuário que insira manualmente as notas de cada matéria."""
+    
     boletim = {}
     print(Fore.CYAN + "\n--- DIGITAÇÃO DAS NOTAS ---")
     for materia in MATERIAS:
@@ -52,43 +90,47 @@ def obter_notas_manuais():
                 )
     return boletim
 
-
+ #  essa def gera notas aleatorias.
 def gerar_notas_aleatorias():
-    """Gera notas aleatórias entre 3.0 e 10.0 para cada matéria."""
+    
     boletim = {}
     for materia in MATERIAS:
         nota = round(random.uniform(3.0, 10.0), 1)
         boletim[materia] = nota
     return boletim
 
-
+ # essa def calcula a media.
 def calcular_media(boletim):
-    """Calcula a média aritmética simples de todas as matérias."""
+   
     return sum(boletim.values()) / len(boletim)
 
-
+ # essa def exibe o booletim ficiticio com notas e dados
 def emitir_boletim():
-    """Função principal que coordena a execução do programa."""
+    
     aluno = gerar_dados_aluno()
 
     print(Fore.CYAN + Style.BRIGHT + "=== CADASTRO E EMISSÃO DE BOLETIM ===")
     print(Fore.YELLOW + "1. Inserir notas MANUALMENTE")
     print(Fore.YELLOW + "2. Gerar notas ALEATORIAMENTE")
 
-    # Escolha do modo de operação
+    # asopções de escolha.
     opcao = input("\nEscolha uma opção (1 ou 2): ").strip()
 
     if opcao == "1":
         boletim = obter_notas_manuais()
-    else:
+    elif opcao == "2":
         print(Fore.GREEN + "\nGerando notas aleatórias...")
         boletim = gerar_notas_aleatorias()
+    else:
+        print(Fore.RED + "Opção inválida! Gerando notas aleatórias...")
+        boletim = gerar_notas_aleatorias()
 
-    # Processamento dos resultados
+    #resultados
     media = calcular_media(boletim)
     data_emissao = datetime.now().strftime("%d/%m/%Y às %H:%M:%S")
 
-    # Definição do status e cor correspondente
+    # Pàrte para definir cor e status do boletim
+
     if media >= 6.0:
         status = "APROVADO"
         cor_status = Fore.GREEN

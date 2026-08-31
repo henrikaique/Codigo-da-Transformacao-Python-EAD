@@ -1,6 +1,6 @@
 import random
 import math
-
+ # essa funçãa serve para jogar um jogo de adivinhação com um nmero aleatoria tendo limites de 1 a 24.
 def jogar():
     limite_inferior = 1
     limite_superior = 24
@@ -9,7 +9,7 @@ def jogar():
     
 
     max_tentativas = math.ceil(math.log2(limite_superior - limite_inferior + 1))
-    
+     # essa é a interface do jogo
     print("=== JOGO DA ADIVINHAÇÃO ===")
     print(f"Tente adivinhar o número entre {limite_inferior} e {limite_superior}.")
     print(f"Você tem {max_tentativas} tentativas!\n")
