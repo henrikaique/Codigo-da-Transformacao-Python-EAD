@@ -1,3 +1,4 @@
+# esse código cria uma classe e destina marca e modelo a classe e depois exibe as informações.
 class Carro:
     def __init__(self,marca, modelo):
         self.marca = marca

@@ -1,3 +1,4 @@
+# esse código cria uma classe chamada Carro com atributos de marca e modelo e uma forma para exibir as informações pedidas.
 class Carro:
     def __init__(self,marca, modelo):
         self.marca = marca
@@ -14,7 +15,7 @@ class CarroEletrico(Carro):
 
 
 
-
+ # esse código cria uma classe chamada CarroEletrico que herda da classe Carro e tem um atributo diferente.
 
 
     def exibir_info(self):

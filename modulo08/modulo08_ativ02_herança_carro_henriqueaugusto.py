@@ -1,3 +1,4 @@
+# Esse codigo é um codigo orientado a objeto ele cria uma classe chamada carro com atributos marca e modelo e depois exibe as informações do objeto de destino.
 class Carro:
     
     def __init__(self,marca, modelo):
