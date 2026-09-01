@@ -1,5 +1,5 @@
 import json
-
+# essa parte do código cria um arquivo JSON e adiciona as informações abaixo nele.
 nome_arquivo = "clientes_nomes.json"
 
 clientes = [
