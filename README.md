@@ -1,11 +1,11 @@
 # Codigo-da-Transformacao-Python-EAD
 Este repositório é dedicado as atividades respondidas na plataforma EAD do Código da Transformação.
-🚀 Código_Transformação: O Guia Completo para o seu Portfólio Dev
+# 🚀 Código_Transformação: O Guia Completo para o seu Portfólio Dev
 Olá! 👋 Bem-vindo(a) à sua jornada no universo da programação. Este guia foi feito para quem quer aprender, botar a mão na massa e transformar código em algo incrível.
 
 O seu repositório no GitHub será a base do seu projeto. Use este espaço para organizar suas atividades e ver sua evolução. A seguir, você encontra um roteiro prático para dominar as ferramentas e os conceitos essenciais do mundo da tecnologia.
 
-💻 Introdução ao Git, GitHub e Metodologias Ágeis
+# 💻 Introdução ao Git, GitHub e Metodologias Ágeis
 Chega de teoria, é hora de agir!
 
 Crie seu repositório: Inicie um repositório público no GitHub. Esse será o seu portfólio de projetos.
@@ -18,7 +18,7 @@ Documente seu projeto: Crie um arquivo README.md detalhado. É o seu cartão de 
 
 Entrega: Adicione o código na pasta Modulo_01/ do seu repositório no GitHub e envie o link.
 
-🐍 Introdução ao Python
+# 🐍 Introdução ao Python
 Vamos começar a programar de verdade!
 
 Instale e configure: Prepare seu ambiente de trabalho no VS Code ou PyCharm. É o seu palco para criar e rodar seus códigos Python.
@@ -30,7 +30,7 @@ Primeiro programa: Crie um script que pergunte o nome do usuário e diga "Oi!".
 Desafio Extra: Deixe sua mensagem ainda mais legal! Use a biblioteca datetime para exibir a hora atual junto com a saudação.
 Entrega: Adicione o código na pasta Modulo_02/ do seu repositório no GitHub e envie o link.
 
-🧠 Lógica de Programação com Python
+# 🧠 Lógica de Programação com Python
 Aprenda a pensar como um programador!
 
 Operadores aritméticos: Crie programas que somam, subtraem, multiplicam, dividem e calculam o resto da divisão.
@@ -42,7 +42,7 @@ Classificando idades: Use if-elif-else para criar um programa que classifique a 
 Desafio Extra: Crie um menu interativo de calculadora! Use um loop while para que o usuário possa escolher entre Soma, Subtração e Sair, repetindo a operação até que ele decida parar.
 Entrega: Adicione o código na pasta Modulo_03/ do seu repositório no GitHub e envie o link.
 
-🔢 Estruturas de Dados
+# 🔢 Estruturas de Dados
 Organize suas informações como um pro!
 
 Crie uma lista de compras: Desenvolva um programa que permita adicionar, remover e visualizar itens dinamicamente em uma lista.
@@ -54,7 +54,7 @@ Separe pares e ímpares: Dado um conjunto de números, use um loop para identifi
 Desafio Extra: Construa uma agenda de contatos usando dicionários. Você deve conseguir adicionar, remover, buscar e gerenciar os contatos.
 Entrega: Adicione o código na pasta Modulo_04/ do seu repositório no GitHub e envie o link.
 
-⚙️ Funções em Python
+# ⚙️ Funções em Python
 Automatize tarefas e escreva códigos mais limpos!
 
 Crie sua primeira função: Faça uma função chamada saudacao() que receba um nome e imprima uma mensagem personalizada.
@@ -66,7 +66,7 @@ Encontre o maior e o menor: Crie uma função maior_menor() que receba uma lista
 Desafio Extra: Implemente um sistema de login simples com uma função para validar usuário e senha, usando um dicionário para armazenar os dados de acesso.
 Entrega: Adicione o código na pasta Modulo_05/ do seu repositório no GitHub e envie o link.
 
-📁 Manipulação de Arquivos
+# 📁 Manipulação de Arquivos
 Guarde e gerencie informações fora do código!
 
 Crie e leia um arquivo .txt: Faça um programa para escrever e ler informações de um arquivo de texto.
@@ -78,7 +78,7 @@ Crie um sistema de notas em CSV: Desenvolva um programa para adicionar e salvar 
 Desafio Extra: Crie um sistema de backup automático com a biblioteca shutil para copiar arquivos de uma pasta para outra.
 Entrega: Adicione o código na pasta Modulo_06/ do seu repositório no GitHub e envie o link.
 
-📦 Módulos e Pacotes
+# 📦 Módulos e Pacotes
 Aprenda a reutilizar código e a organizar projetos!
 
 Crie seu próprio módulo: Faça um arquivo utilidades.py com funções matemáticas e depois importe-o no seu programa principal.
@@ -90,7 +90,7 @@ Desenvolva um jogo de adivinhação: Use as bibliotecas random e math para criar
 Desafio Extra: Organize seu projeto em pacotes e módulos. Aprenda a estruturar o código de maneira clara e eficiente para projetos mais complexos.
 Entrega: Adicione o código na pasta Modulo_07/ do seu repositório no GitHub e envie o link.
 
-🚗 Programação Orientada a Objetos (POO)
+# 🚗 Programação Orientada a Objetos (POO)
 Crie modelos para resolver problemas do mundo real!
 
 Crie uma classe Carro: Defina a classe com atributos como marca, modelo e um método exibir_info().
@@ -102,7 +102,7 @@ Use métodos especiais: Aprenda a usar __init__ e __str__ para inicializar atrib
 Desafio Extra: Crie um sistema de biblioteca com classes Livro e Biblioteca para gerenciar empréstimos.
 Entrega: Adicione o código na pasta Modulo_08/ do seu repositório no GitHub e envie o link.
 
-🐛 Tratamento de Erros
+# 🐛 Tratamento de Erros
 Prepare seu código para o inesperado!
 
 Trate a divisão por zero: Use try-except em uma calculadora para lidar com erros de divisão por zero.
@@ -114,7 +114,7 @@ Valide entradas de usuário: Adicione validações para garantir que dados como 
 Desafio Extra: Implemente um sistema de login que trata credenciais inválidas e permite múltiplas tentativas.
 Entrega: Adicione o código na pasta Modulo_09/ do seu repositório no GitHub e envie o link.
 
-🌐 Introdução a APIs
+# 🌐 Introdução a APIs
 Comunique-se com outras aplicações!
 
 Consuma uma API: Use a biblioteca requests para pegar dados do tempo da API do OpenWeatherMap.
@@ -126,7 +126,7 @@ Trate erros de conexão: Implemente um bloco de tratamento de exceção para lid
 Desafio Extra: Crie um programa que busca dados de filmes com a API do TMDB e exiba título, gênero e sinopse.
 Entrega: Adicione o código na pasta Modulo_10/ do seu repositório no GitHub e envie o link.
 
-🗄️ Banco de Dados com PostgreSQL
+# 🗄️ Banco de Dados com PostgreSQL
 Armazene, organize e gerencie seus dados!
 
 Crie sua primeira tabela: Configure um banco de dados SQLite e crie uma tabela Clientes com id, nome e email.
@@ -138,7 +138,7 @@ Filtre dados com SQL: Execute consultas para extrair informações específicas 
 Desafio Extra: Crie um sistema de gerenciamento de tarefas que permita adicionar, visualizar e excluir tarefas, usando o SQLite para armazenar os dados.
 Entrega: Adicione o código na pasta Modulo_11/ do seu repositório no GitHub e envie o link.
 
-🧪 Testes Automatizados
+# 🧪 Testes Automatizados
 Nenhum código é perfeito sem testes!
 
 Teste uma função de soma: Desenvolva um teste simples com o módulo unittest para validar uma função de soma.
@@ -150,7 +150,7 @@ Valide entradas inválidas: Adicione cenários de teste para verificar como o pr
 Desafio Extra: Implemente testes automatizados para uma API Flask usando o framework pytest.
 Entrega: Adicione o código na pasta Modulo_12/ do seu repositório no GitHub e envie o link.
 
-👨‍💻 Desenvolvimento de APIs com Flask
+# 👨‍💻 Desenvolvimento de APIs com Flask
 Crie serviços web para suas aplicações!
 
 Configure um servidor Flask: Crie um servidor Flask básico com uma rota GET /saudacao.
@@ -162,7 +162,7 @@ Conecte ao SQLite: Integre o servidor a um banco de dados SQLite para persistir 
 Desafio Extra: Crie uma API completa para um blog, com funcionalidades como criação de posts e autenticação.
 Entrega: Adicione o código na pasta Modulo_13/ do seu repositório no GitHub e envie o link.
 
-🌐 Introdução ao Django
+# 🌐 Introdução ao Django
 Construa aplicações web robustas!
 
 Crie um projeto e modelo: Inicie um projeto Django e crie um modelo de Produto com campos como nome, descrição, preço e quantidade.
@@ -174,7 +174,7 @@ Configure o painel de administração: Gerencie seus produtos pelo painel de adm
 Desafio Extra: Adicione uma busca por nome e paginação na listagem de produtos.
 Entrega: Adicione o código na pasta Modulo_14/ do seu repositório no GitHub e envie o link.
 
-🎯 Projeto Final
+# 🎯 Projeto Final
 Junte tudo em uma aplicação completa!
 
 Planejamento: Escolha um tema (gerenciamento, e-commerce, portal de notícias) e detalhe os requisitos em um documento.
